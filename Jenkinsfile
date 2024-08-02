@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'boardgame'
+    }
     
     tools {
         maven 'maven3'
